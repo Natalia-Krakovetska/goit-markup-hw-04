@@ -10,6 +10,7 @@
   --mail-tel-clr: rgba(255, 255, 255, 0.6);
   --brd-card-clr: #eeeeee;
   --brd-hero-clr: #ececec;
+  --brd-gradient-clr: rgba(47, 48, 58, 0.4);
   --card-gap: 30px;
   --card-item: 4;
 }
@@ -158,6 +159,19 @@ img {
   background-color: var(--bgr-clr);
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      var(--brd-gradient-clr),
+      var(--brd-gradient-clr)
+    ),
+    url("../images/header.jpg");
 }
 
 .hero-title {
