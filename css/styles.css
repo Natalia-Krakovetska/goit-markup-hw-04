@@ -391,6 +391,12 @@ img {
 
 /* Social icons */
 
+.footer {
+  display: flex;
+}
+.company-icons {
+  display: flex;
+}
 .digity-container {
   display: flex;
   width: 270px;
