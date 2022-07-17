@@ -11,6 +11,7 @@
   --brd-card-clr: #eeeeee;
   --brd-hero-clr: #ececec;
   --brd-gradient-clr: rgba(47, 48, 58, 0.4);
+  --icon-clr: #afb1b8;
   --card-gap: 30px;
   --card-item: 4;
 }
@@ -262,6 +263,7 @@ img {
 .team-card {
   padding: 30px;
   text-align: center;
+  background-color: var(--btn-clr);
 }
 
 .team-text,
@@ -280,6 +282,7 @@ img {
 .team-text {
   font-size: 16px;
   line-height: calc(19 / 16);
+  margin-bottom: 16px;
 }
 
 .card-item {
@@ -295,7 +298,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer-contacts {
+  display: flex;
+  gap: 70px;
+}
 .address {
   color: var(--mail-tel-clr);
   font-style: normal;
@@ -308,8 +314,12 @@ img {
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
+.address-list {
+  display: block;
+}
 
 .footer .logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -377,4 +387,73 @@ img {
 .sevice-text {
   font-size: 16px;
   line-height: calc(30 / 16);
+}
+
+/* Social icons */
+
+.digity-container {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bgr-clr);
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--logo-clr);
+}
+.socials-link:hover,
+.socials-link:focus .socials-icon {
+  --color1: #ffff;
+  background-color: var(--logo-clr);
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-clr);
+  border-radius: 4px;
+}
+.clients-icon {
+  fill: var(--icon-clr);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--logo-clr);
+}
+.clients-link:hover .clients-icon {
+  fill: var(--logo-clr);
+}
+.clients-link:focus .clients-icon {
+  fill: var(--logo-clr);
 }
