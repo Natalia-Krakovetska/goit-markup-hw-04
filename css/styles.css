@@ -448,7 +448,7 @@ img {
 .socials-link:focus {
   background-color: var(--logo-clr);
 }
-.socials-link:hover,
+.socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
   --color1: #ffff;
 }
@@ -475,7 +475,7 @@ img {
   border-color: var(--logo-clr);
 }
 
-.clients-link:focus,
+.clients-link:focus .clients-icon,
 .clients-link:hover .clients-icon {
   fill: var(--logo-clr);
 }
@@ -487,6 +487,7 @@ img {
   font-weight: 700;
   line-height: calc(16 / 14);
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .footer .container {
